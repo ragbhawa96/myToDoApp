@@ -39,20 +39,18 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            CircleAvatar(
-              radius: 60.0,
-              backgroundImage: AssetImage("assets/todo_icon.png"),
-              backgroundColor: Colors.transparent,
+            Image(
+              image: AssetImage("assets/MyD.png"),
             ),
+//            CircleAvatar(
+//              radius: 100.0,
+//              backgroundImage: AssetImage("assets/MyD.png"),
+//              backgroundColor: Colors.transparent,
+//            ),
 //            Text(
-//              'My App',
-//              style: TextStyle(
-//                fontFamily: 'Karla',
-//                fontWeight: FontWeight.w700,
-//                fontSize: 25.0,
-//                color: Colors.blue,
-//              ),
-//            )
+//              'MyDo',
+//              style: GoogleFonts.architectsDaughter(),
+//            ),
           ],
         ),
       ),

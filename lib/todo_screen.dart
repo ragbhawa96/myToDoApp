@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:mydoapp/dbhelper.dart';
 
 class TodoScreen extends StatefulWidget {
@@ -76,6 +77,7 @@ class _TodoScreenState extends State<TodoScreen> {
             title: Text(
               row['todo'],
               style: TextStyle(
+                fontFamily: 'OpenSans',
                 fontSize: 18.0,
                 decoration: row['status'] == '0'
                     ? TextDecoration.none
@@ -217,8 +219,9 @@ class _TodoScreenState extends State<TodoScreen> {
                 centerTitle: true,
                 title: Text(
                   "ALL TASKS",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                  style: GoogleFonts.openSans(
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
               ),
@@ -226,7 +229,7 @@ class _TodoScreenState extends State<TodoScreen> {
               body: Center(
                 child: Text(
                   "No Task Avaliable",
-                  style: TextStyle(fontFamily: "Raleway", fontSize: 20.0),
+                  style: TextStyle(fontSize: 20.0),
                 ),
               ),
             );
@@ -245,8 +248,9 @@ class _TodoScreenState extends State<TodoScreen> {
                 centerTitle: true,
                 title: Text(
                   "ALL TASKS",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                  style: GoogleFonts.openSans(
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
               ),
