@@ -14,3 +14,9 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Basic Operations
+
+- To add new Task : tap + icon button.
+- To mark as completed : tap on the right most icon button.
+- To Delete a Task : Press a task for 3 seconds.
