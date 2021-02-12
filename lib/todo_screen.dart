@@ -61,12 +61,12 @@ class _TodoScreenState extends State<TodoScreen> {
       children.add(Card(
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(60.0)),
-        elevation: 8.0,
+        elevation: 5.0,
         margin: EdgeInsets.symmetric(
           horizontal: 10.0,
           vertical: 5.0,
         ),
-        color: row['status'] == '0' ? null : Colors.white.withOpacity(0.5),
+        color: row['status'] == '0' ? null : Colors.white.withOpacity(0.6),
         child: Container(
 //          decoration: row['status'] == '0'
 //              ? null
@@ -177,26 +177,6 @@ class _TodoScreenState extends State<TodoScreen> {
         });
   }
 
-  /* basic card of the task
-  Widget myCard(String task) {
-    return Card(
-      elevation: 5.0,
-      margin: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
-      child: Container(
-        color: Colors.white,
-        padding: EdgeInsets.all(5.0),
-        child: ListTile(
-          title: Text(
-            "$task",
-          ),
-          onLongPress: () {
-            print("this is going be deleted");
-          },
-        ),
-      ),
-    );
-  }
-*/
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(

@@ -40,7 +40,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image(
-              image: AssetImage("assets/MyD.png"),
+              image: AssetImage("assets/MyDo.png"),
             ),
 //            CircleAvatar(
 //              radius: 100.0,
