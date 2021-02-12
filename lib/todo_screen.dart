@@ -66,7 +66,7 @@ class _TodoScreenState extends State<TodoScreen> {
           horizontal: 10.0,
           vertical: 5.0,
         ),
-        color: row['status'] == '0' ? null : Colors.grey.shade100,
+        color: row['status'] == '0' ? null : Colors.white.withOpacity(0.5),
         child: Container(
 //          decoration: row['status'] == '0'
 //              ? null
@@ -82,6 +82,9 @@ class _TodoScreenState extends State<TodoScreen> {
                 decoration: row['status'] == '0'
                     ? TextDecoration.none
                     : TextDecoration.lineThrough,
+                color: row['status'] == '0'
+                    ? null
+                    : Colors.black.withOpacity(0.25),
               ),
             ),
             onLongPress: () {
@@ -131,6 +134,7 @@ class _TodoScreenState extends State<TodoScreen> {
                     },
                     style: TextStyle(
                       fontSize: 18.0,
+                      fontFamily: 'OpenSans',
                     ),
                     decoration: InputDecoration(
                       errorText: validated ? null : errText,
@@ -229,7 +233,10 @@ class _TodoScreenState extends State<TodoScreen> {
               body: Center(
                 child: Text(
                   "No Task Avaliable",
-                  style: TextStyle(fontSize: 20.0),
+                  style: GoogleFonts.openSans(
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
             );
