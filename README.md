@@ -17,6 +17,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Basic Operations
 
-- To add new Task : tap + icon button.
+- To add new Task : tap + button.
 - To mark as completed : tap on the right most icon button.
 - To Delete a Task : Press a task for 3 seconds.
